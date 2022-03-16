@@ -4,7 +4,7 @@ const FilterBTN = ({ input, task, updatePageNumber, index, name }) => {
             <style jsx>
                 {`
                     .x:checked + label {
-                        background-color: #0b5ed;
+                        background-color: #0b5ed7;
                         color:white;
                     }
                     input[type="radio"] {

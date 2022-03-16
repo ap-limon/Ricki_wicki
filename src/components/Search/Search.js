@@ -6,7 +6,7 @@ const Search = ({setSearch, updatePageNumber}) => {
         e.preventDefault();
     };
     return (
-        <form className={`${styles.search} d-flex flex-sm-row flex-column align-items-center justify-content-cneter gap-4 mb-5`}>
+        <form className={`${styles.search} d-flex flex-sm-row flex-column align-items-center justify-content-center gap-4 mb-5`}>
             <input
                 onChange={e => {
                 updatePageNumber(1);

@@ -1,14 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Card from "./components/Card/Card";
 import Filter from "./components/Filter/Filter";
 import Navbar from "./components/Navbar/Navbar";
+import Episode from "./Pages/Episode";
+import Location from "./Pages/Location";
 import Pagination from "./components/Pagination/Pagination";
 import Search from "./components/Search/Search";
 import './App.css';
 
-function App() {
+const Home = () => {
   let [fetchData, updateFetchData] = useState([]);
   let [pageNumber, updatePageNumber] = useState(1);
   let [search, setSearch] = useState("");
@@ -55,6 +58,21 @@ function App() {
       />
     </div>
   );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/episodes" element={<Episode />}/>
+        <Route path="/location" element={<Location />}/>
+      </Routes>
+    </Router>
+  )
 }
 
 export default App;
