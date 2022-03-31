@@ -1,6 +1,12 @@
 $mbl_photo: url("./pictures/rick_and_morty_Mbl.jpg");
 $td_photo: url("./pictures/rick_and_morty_TD.jpg");
 $bg_color: rgba(12, 250, 10, .2) ;
+$txt_color: white;
+
 body {
     background: $bg_color $td_photo;
+    font-size: 1.2rem;
+}
+h1 {
+    color: $txt_color;
 }

@@ -1,10 +1,18 @@
 import "./index.scss";
+import * as heading from "./heding";
+import * as pBody from "./pBody";
 
 const main = document.querySelector('.main');
 
-const firstHeading = () => {
-    return "<h1>You got what you deserved.</h1>"
+const content = () => {
+    return `${heading.h1}${pBody.p}`
 }
 
-main.innerHTML = firstHeading();
-console.log("you got me");
+main.innerHTML = content();
+
+heading.simpleLog();
+pBody.simpleLog();
+
+console.log('you got me nice');
+
+console.log("I have been looking for if the clean plugin is working well");
