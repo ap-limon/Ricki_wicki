@@ -1,18 +1,8 @@
 import "./index.scss";
-import * as heading from "./heding";
-import * as pBody from "./pBody";
+import Navbar from "./components/Navbar/Navbar";
+import Main from "./main";
+import Footer from "./components/Footer/Footer";
 
-const main = document.querySelector('.main');
-
-const content = () => {
-    return `${heading.h1}${pBody.p}`
-}
-
-main.innerHTML = content();
-
-heading.simpleLog();
-pBody.simpleLog();
-
-console.log('you got me nice');
-
-console.log("I have been looking for if the clean plugin is working well");
+Navbar.initialFunction();
+Main.initialFunction();
+Footer.initialFunction();

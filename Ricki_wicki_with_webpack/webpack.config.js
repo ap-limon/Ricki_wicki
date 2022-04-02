@@ -16,7 +16,6 @@ module.exports = {
         filename: fileName,
         assetModuleFilename: "images/[contenthash][ext][query]",
         path: path.resolve(__dirname, 'build'),
-        clean: true,
     },
     devtool: "source-map",
     devServer: {
@@ -25,7 +24,6 @@ module.exports = {
     plugins: [
         new htmlWebpackPlugin({
             template: "./index.html",
-            title: "Output Mangement"
         })
     ],
     module: {
