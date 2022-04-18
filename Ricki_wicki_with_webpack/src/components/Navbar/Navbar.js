@@ -13,14 +13,14 @@ class Navbar {
                 <input class="form-control me-2" type="text" placeholder="Search">
                 <button class="btn btn-primary d-none d-sm-block" type="button">Search</button>
                 <div class="btn btn-primary d-block d-sm-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
+                    <i class="bi bi-search"></i>
                 </div>
             </form>
 
-            <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
+            <button class="px-1 navbar-toggler col-2" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span>
+                    <i class="bi bi-list"></i>
+                </span>
             </button>
             <div class="collapse navbar-collapse col-xxl-3 col-md-4" id="mynavbar">
                 <ul class="navbar-nav me-auto justify-content-around">

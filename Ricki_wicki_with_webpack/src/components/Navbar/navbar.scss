@@ -12,8 +12,14 @@
     width: 80%;
     background-color: #07d426;
 }
-.navbar-toggler-icon {
-    background-image: url('../../pictures/list.svg')!important;
+
+.navbar-toggler {
+    width: 40px;
+    color: rgba(0, 0, 0, .3)!important;
+    font-size: 25px;
+    span {
+        color: black;
+    }
 }
 
 @media screen and (min-width: 768px) {
