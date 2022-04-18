@@ -1,0 +1,18 @@
+$font_color: #088fa4;
+
+.home {
+    background: rgba($color: #dfd, $alpha: .75);
+    box-shadow: 2px 0 10px 2px green, -2px 0 10px 2px green, 0 5px 25px black, 0 -5px 25px black;
+    font-family: 'Roboto',
+        sans-serif;
+    border-radius: 20px;
+    .heading h1 {
+        color: $font_color;
+        font-family: 'Courgette',
+            cursive;
+    }
+
+    #filter {
+        height: 300px;
+    }
+}

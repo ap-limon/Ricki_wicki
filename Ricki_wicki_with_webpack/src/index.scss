@@ -3,10 +3,21 @@ $td_photo: url("./pictures/rick_and_morty_TD.jpg");
 $bg_color: rgba(12, 250, 10, .2) ;
 $txt_color: red ;
 
-body {
-    background: $td_photo fixed no-repeat center;
-    font-size: 1.2rem;
+@mixin mbl_tab_bg {
+    @media screen and (max-width:880px){
+        @content;
+    }
 }
+
+body {
+    background: $td_photo center/cover no-repeat fixed;
+    font-size: 1.2rem;
+
+    @include mbl_tab_bg {
+        background: $mbl_photo center/cover no-repeat fixed;
+    }
+}
+
 h1 {
     color: $txt_color;
 }

@@ -1,0 +1,23 @@
+.navbar {
+    height: 60px;
+    background-color: #07d426;
+}
+
+.nav-link {
+    color: black!important;;
+    text-align: center;
+}
+.navbar-nav {
+    margin: auto;
+    width: 80%;
+    background-color: #07d426;
+}
+.navbar-toggler-icon {
+    background-image: url('../../pictures/list.svg')!important;
+}
+
+@media screen and (min-width: 768px) {
+    .form-control {
+        width: 50%;
+    }
+}
